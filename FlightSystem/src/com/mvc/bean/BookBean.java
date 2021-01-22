@@ -7,7 +7,7 @@ public class BookBean {
 	private String source;
 	private String destination;
 	private String departure;
-	private String payment;
+	
 	public 	String getFlightcode() {
 		return flightcode;
 	}
@@ -37,12 +37,6 @@ public class BookBean {
 	}
 	public void setDeparture(String departure) {
 		this.departure = departure;
-	}
-	public String getPayment() {
-		return payment;
-	}
-	public void setPayment(String payment) {
-		this.payment = payment;
 	}
 	
 	

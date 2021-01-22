@@ -19,15 +19,15 @@ import com.mvc.dao.BookDao;
 import com.mvc.dao.LoginDao;
 import com.mvc.dao.RegisterDao;
 
-@WebServlet("/BookingServlet")
+@WebServlet("/BookServlet")
 public class BookServlet extends HttpServlet {
 
 	  private BookDao bookDao;
   
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+     
+       
         
             
              String flightcode=request.getParameter("flightcode");
@@ -37,16 +37,17 @@ public class BookServlet extends HttpServlet {
              String departuredate=request.getParameter("departuredate");
                 
              BookBean bookbean = new BookBean();
+             
              bookbean.setFlightcode(flightcode);
              bookbean.setPassengername(passengername);
              bookbean.setSource(source);
              bookbean.setDestination(destination);
-             bookbean.setDeparturedate(departuredate);
+             bookbean.setDeparture(departuredate);
          
              BookDao bookDao = new BookDao();
              
              
-             String userBook = bookDao.bookUser( bookbean);
+             String userBook = bookDao.userBook(bookbean);
              
              if(userBook.equals("SUCCESS"))  
              {
@@ -57,10 +58,9 @@ public class BookServlet extends HttpServlet {
                 request.setAttribute("errMessage", userBook);
                 request.getRequestDispatcher("/Pay.jsp").forward(request, response);
              }
+             
         
             
         }
-    }
-
-
+    
 }

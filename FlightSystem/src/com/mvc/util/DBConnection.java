@@ -7,9 +7,9 @@ public class DBConnection {
  public static Connection createConnection()
  {
      Connection con = null;
-     String url = "jdbc:mysql://localhost:3306/customers"; //MySQL URL followed by the database name
+     String url = "jdbc:mysql://localhost:3306/atyeti"; //MySQL URL followed by the database name
      String username = "root"; //MySQL username
-     String password = "root123"; //MySQL password
+     String password = "Root"; //MySQL password
      System.out.println("In DBConnection.java class ");
       
      try

@@ -13,4 +13,30 @@
  <servlet-name>RegisterServlet</servlet-name>
  <url-pattern>/RegisterServlet</url-pattern>
  </servlet-mapping>
+ 
+ 
+ <servlet>
+ <description></description>
+ <display-name>BookServlet</display-name>
+ <servlet-name>BookServlet</servlet-name>
+ <servlet-class>com.mvc.controller.BookServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>BookServlet</servlet-name>
+ <url-pattern>/BookServlet</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ <servlet>
+ <description></description>
+ <display-name>PayServlet</display-name>
+ <servlet-name>PayServlet</servlet-name>
+ <servlet-class>com.mvc.controller.PayServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>PayServlet</servlet-name>
+ <url-pattern>/PayServlet</url-pattern>
+ 
+ 
+ </servlet-mapping>
 </web-app>

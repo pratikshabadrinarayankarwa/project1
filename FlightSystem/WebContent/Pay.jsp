@@ -48,17 +48,18 @@
 		<div class="txt">Make A Payement</div>
 
 		<div class="co1">
-			<form action="pay1" method="GET">
+			<form action="PayServlet" method="POST">
 				<center>
 					<br>
 					<br> Flight Name : <input type="text"
 						placeholder="enter flight name" name="price"><br>
 					<br> Ticket Price: <input type="date"
 						placeholder="Mention here price" name="expdate"> <br>
-					<br> Cardholder's Name : <input type="text"
-						placeholder="Enter cardholder name" name="cname"> <br>
-					<br> Credit Card Number: <input type="text"
-						placeholder="Enter card number" name="cnumber"> <br>
+					<br> 
+					Cardholder's Name : <input type="text"placeholder="Enter cardholder name" name="cname">
+					 <br><br>
+					 Credit Card Number: <input type="text"placeholder="Enter card number" name="cnumber">
+					  <br>
 
 
 

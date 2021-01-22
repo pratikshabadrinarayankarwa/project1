@@ -84,11 +84,7 @@ function validate()
      { 
      alert("Please mention a date"); 
      return false; 
-     } 
-     else if (payment==null || payment=="")
-     { 
-     alert("enter valid amount"); 
-     return false; 
+     }  
  } 
 </script>
 </head>
@@ -111,7 +107,7 @@ function validate()
 		<h2>Book Ticket</h2>
 	</center>
 
-	<form name="form" action="BookingServlet" method="post"
+	<form name="form" action="BookServlet" method="post"
 		onsubmit="return validate()">
 		<table align="center">
 
@@ -149,7 +145,7 @@ function validate()
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" value=" Book Here"></input><input
+				<td><input type="submit" value="Pay"></input><input
 					type="reset" value="Reset"></input></td>
 			</tr>
 		</table>

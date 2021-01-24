@@ -64,8 +64,8 @@ li a:hover {
 		<li><a href="Register.jsp">Registration</a></li>
 		<li><a href="Flight1.jsp">All Flights</a></li>
 		<li><a href="Booking.jsp">Book Ticket</a></li>
-		<li><a href="About.jsp">Booked Tickets</a></li>
-		<li><a href="Contact.jsp">Cancel Ticket</a></li>
+		<li><a href="Check.jsp">check status</a></li>
+		<li><a href="Cancel.jsp">cancel Ticket</a></li>
 	</ul>
 
 

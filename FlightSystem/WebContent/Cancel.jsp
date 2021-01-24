@@ -54,18 +54,18 @@ li a:hover {
 function validate()
 { 
      var flightcode = document.form.flightcode.value;
-     var passengername = document.form.passengernamel.value;
+     /*var passengername = document.form.passengernamel.value;
      var source = document.form.source.value; 
      var destination = document.form.destination.value;
  var departuredate= document.form.departuredate.value;
- var payment= document.form.payment.value;
+ var payment= document.form.payment.value;*/
      
      if (flightcode==null || flightcode=="")
      { 
      alert("Flight code can't be change"); 
      return false; 
      }
-     else if (passengername==null || passengername=="")
+     /*else if (passengername==null || passengername=="")
      { 
      alert("passengername can't be blank"); 
      return false; 
@@ -84,7 +84,7 @@ function validate()
      { 
      alert("Please mention a date"); 
      return false; 
-     }  
+     }  */
  } 
 </script>
 </head>
@@ -98,8 +98,8 @@ function validate()
 		<li><a href="Register.jsp">Registration</a></li>
 		<li><a href="Flight1.jsp">All Flights</a></li>
 		<li><a href="Booking.jsp">Book Ticket</a></li>
-		<li><a href="About.jsp">Booked Flights</a></li>
-		<li><a href="Contact.jsp">Cancel Flight</a></li>
+		<li><a href="check.jsp">check status</a></li>
+		<li><a href="Cancel.jsp">Cancel Flight</a></li>
 	</ul>
 
 
@@ -107,7 +107,7 @@ function validate()
 		<h2>Book Ticket</h2>
 	</center>
 
-	<form name="form" action="BookServlet" method="post"
+	<form name="form" action="CancelServlet" method="post"
 		onsubmit="return validate()">
 		<table align="center">
 
@@ -116,38 +116,17 @@ function validate()
 				<td>Flight Code</td>
 				<td><input type="text" name="flightcode" /></td>
 			</tr>
-			<tr>
-				<td>Passenger Name</td>
-				<td><input type="text" name="passengername" /></td>
-			</tr>
-			<tr>
-				<td>Source</td>
-				<td><input type="text" name="source" /></td>
-			</tr>
-			<tr>
-				<td>Destination</td>
-				<td><input type="text" name="destination" /></td>
-			</tr>
-			<tr>
-				<td>Departure Date</td>
-				<td><input type="text" name="departure" /></td>
-			</tr>
-
-			</tr>
-			<!--  <tr>
-         <td>Payment</td>
-         <td><input type="text" name="payment" /></td>
-         </tr> -->
-
+			
 
 			<tr>
 				<td><%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" value="Pay"></input><input
+				<td><input type="submit" value="cancel ticket"></input><input
 					type="reset" value="Reset"></input></td>
 			</tr>
 		</table>
 	</form>
 </body>
+</html>

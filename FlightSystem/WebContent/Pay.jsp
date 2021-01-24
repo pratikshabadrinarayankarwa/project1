@@ -50,27 +50,18 @@
 		<div class="co1">
 			<form action="PayServlet" method="POST">
 				<center>
-					<br>
-					<br> Flight Name : <input type="text"
-						placeholder="enter flight name" name="price"><br>
-					<br> Ticket Price: <input type="date"
-						placeholder="Mention here price" name="expdate"> <br>
-					<br> 
-					Cardholder's Name : <input type="text"placeholder="Enter cardholder name" name="cname">
-					 <br><br>
-					 Credit Card Number: <input type="text"placeholder="Enter card number" name="cnumber">
-					  <br>
+<br><br> Flight Name : <input type="text"placeholder="enter flight name" name="flightname"><br><br> 
+Ticket Price: <input type="date"placeholder="Mention here price" name="ticketprice"> <br><br> 
+Cardholder Name : <input type="text"placeholder="Enter cardholder name" name="cardholdername"><br><br>
+CreditCard Number: <input type="text"placeholder="Enter card number" name="cardnumber"><br><br>
 
-
-
-					<center>
-						<button onclick="myFunction()">Done</button>
-
-						<script>
-							function myFunction() {
-								alert("Payment successful!!");
-							}
-						</script>
+<center>
+<button onclick="myFunction()">Done</button>
+<script>
+function myFunction() {
+alert("Payment successful!!");
+	}
+</script>
 					</center>
 					<br>
 					<button type="button" class="btn btn-warning">

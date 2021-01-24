@@ -23,7 +23,7 @@ public class PayServlet extends HttpServlet {
 		String ticketprice = request.getParameter("ticketprice");
 		String cardholdername = request.getParameter("cardholdername");
 		String cardnumber = request.getParameter("cardnumber");
-		;
+		
 
 		PayBean payBean = new PayBean();
 
@@ -31,13 +31,16 @@ public class PayServlet extends HttpServlet {
 		payBean.setTicketprice(ticketprice);
 		payBean.setCardholdername(cardholdername);
 		payBean.setCardnumber(cardnumber);
+		
 		PayDao payDao = new PayDao();
 
 		String userPay = payDao.payUser(payBean);
 
-		if (userPay.equals("SUCCESS")) {
+		if (userPay.equals("SUCCESS")) 
+		{
 			request.getRequestDispatcher("/Home.jsp").forward(request, response);
-		} else {
+		} 
+		else {
 			request.setAttribute("errMessage", userPay);
 			request.getRequestDispatcher("/Register.jsp").forward(request, response);
 		}

@@ -6,37 +6,41 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.mvc.bean.BookBean;
-import com.mvc.dao.BookDao;
 
-@WebServlet("/BookServlet")
-public class BookServlet extends HttpServlet {
+import com.mvc.bean.CheckBean;
+import com.mvc.dao.CheckDao;
+
+
+@WebServlet("/CheckServlet")
+public class CheckServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		
 		String flightcode = request.getParameter("flightcode");
 		String passengername = request.getParameter("passengername");
 		String source = request.getParameter("source");
 		String destination = request.getParameter("destination");
 		String departure = request.getParameter("departure");
 
-		BookBean bookBean = new BookBean();
+		CheckBean checkBean = new CheckBean();
 
-		bookBean.setFlightcode(flightcode);
-		bookBean.setPassengername(passengername);
-		bookBean.setSource(source);
-		bookBean.setDestination(destination);
-		bookBean.setDeparture(departure);
+		checkBean.setFlightcode(flightcode);
+		checkBean.setPassengername(passengername);
+		checkBean.setSource(source);
+		checkBean.setDestination(destination);
+		checkBean.setDeparture(departure);
 
-		BookDao bookDao = new BookDao();
+		CheckDao checkDao = new CheckDao();
 
-		String userBook = bookDao.userBook(bookBean);
+		String userCheck = checkDao.userCheck(checkBean);
 
-		if (userBook.equals("SUCCESS")) {
+		if (userCheck.equals("SUCCESS")) {
 			request.getRequestDispatcher("/Pay.jsp").forward(request, response);
 		} else {
-			request.setAttribute("errMessage", userBook);
-			request.getRequestDispatcher("/Book.jsp").forward(request, response);
+			request.setAttribute("errMessage", userCheck);
+			request.getRequestDispatcher("/Pay.jsp").forward(request, response);
 		}
 
 	}

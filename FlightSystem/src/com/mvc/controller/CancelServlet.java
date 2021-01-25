@@ -36,12 +36,12 @@ public class CancelServlet extends HttpServlet {
 	             
 	             if(userCancel.equals("SUCCESS"))  
 	             {
-	                request.getRequestDispatcher("/Pay.jsp").forward(request, response);
+	                request.getRequestDispatcher("/index.jsp").forward(request, response);
 	             }
 	             else  
 	             {
 	                request.setAttribute("errMessage", userCancel);
-	                request.getRequestDispatcher("/Pay.jsp").forward(request, response);
+	                request.getRequestDispatcher("/index.jsp").forward(request, response);
 	             }
 	             
 	        

@@ -58,7 +58,7 @@ function validate()
      var source = document.form.source.value; 
      var destination = document.form.destination.value;
  var departuredate= document.form.departuredate.value;
- var payment= document.form.payment.value;
+ //var payment= document.form.payment.value;
      
      if (flightcode==null || flightcode=="")
      { 
@@ -93,13 +93,15 @@ function validate()
 		<h2>Welcome To Flight Booking</h2>
 	</center>
 	<ul>
-		<li><a href="home.jsp">Home</a></li>
+		<li><a href="index.jsp">Home</a></li>
 		<li><a href="Login.jsp">Login</a></li>
 		<li><a href="Register.jsp">Registration</a></li>
-		<li><a href="Flight1.jsp">All Flights</a></li>
+		<li><a href="Flight.jsp">Flights</a></li>
 		<li><a href="Booking.jsp">Book Ticket</a></li>
-		<li><a href="About.jsp">Booked Flights</a></li>
-		<li><a href="Contact.jsp">Cancel Flight</a></li>
+		<li><a href="Check.jsp">Check Status</a></li>
+		<li><a href="Cancel.jsp">Cancel Flight</a></li>
+		                			<li><a href="Update.jsp">Reschedule Ticket</a></li>
+		
 	</ul>
 
 
@@ -134,11 +136,7 @@ function validate()
 			</tr>
 
 			</tr>
-			<!--  <tr>
-         <td>Payment</td>
-         <td><input type="text" name="payment" /></td>
-         </tr> -->
-
+		
 
 			<tr>
 				<td><%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></td>
@@ -149,5 +147,6 @@ function validate()
 					type="reset" value="Reset"></input></td>
 			</tr>
 		</table>
+		
 	</form>
 </body>

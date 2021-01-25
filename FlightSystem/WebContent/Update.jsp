@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <head>
-<title>TODO supply a title</title>
+<title>Reschedule Ticket</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -93,18 +93,19 @@ function validate()
 		<h2>Welcome To Flight Booking</h2>
 	</center>
 	<ul>
-		<li><a href="home.jsp">Home</a></li>
+		<li><a href="index.jsp">Home</a></li>
 		<li><a href="Login.jsp">Login</a></li>
 		<li><a href="Register.jsp">Registration</a></li>
 		<li><a href="Flight.jsp">Flights</a></li>
 		<li><a href="Booking.jsp">Book Ticket</a></li>
 		<li><a href="Check.jsp">Check Status</a></li>
 		<li><a href="Cancel.jsp">Cancel Flight</a></li>
+			<li><a href="Update.jsp">Reschedule Ticket</a></li>
 	</ul>
 
 
 	<center>
-		<h2>Book Ticket</h2>
+		<h2>Reschedule Ticket</h2>
 	</center>
 
 	<form name="form" action="UpdateServlet" method="post"

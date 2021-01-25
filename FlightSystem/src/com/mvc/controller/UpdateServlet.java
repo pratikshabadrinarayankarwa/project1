@@ -34,7 +34,7 @@ public class UpdateServlet extends HttpServlet {
 		String userUpdate = updateDao.userUpdate(updateBean);
 
 		if (userUpdate.equals("SUCCESS")) {
-			request.getRequestDispatcher("/Update.jsp").forward(request, response);
+			request.getRequestDispatcher("/Updated.jsp").forward(request, response);
 		} else {
 			request.setAttribute("errMessage", userUpdate);
 			request.getRequestDispatcher("/Booking.jsp").forward(request, response);

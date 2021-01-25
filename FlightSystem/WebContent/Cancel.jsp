@@ -54,37 +54,14 @@ li a:hover {
 function validate()
 { 
      var flightcode = document.form.flightcode.value;
-     /*var passengername = document.form.passengernamel.value;
-     var source = document.form.source.value; 
-     var destination = document.form.destination.value;
- var departuredate= document.form.departuredate.value;
- var payment= document.form.payment.value;*/
+    
      
      if (flightcode==null || flightcode=="")
      { 
      alert("Flight code can't be change"); 
      return false; 
      }
-     /*else if (passengername==null || passengername=="")
-     { 
-     alert("passengername can't be blank"); 
-     return false; 
-     }
-     else if (source==null || source=="")
-     { 
-     alert("source can't be blank"); 
-     return false; 
-     }
-     else if(destination==null || destination=="")
-     { 
-     alert("destination can't be blank"); 
-     return false; 
-     } 
-     else if (departuredate==null || departuredate=="")
-     { 
-     alert("Please mention a date"); 
-     return false; 
-     }  */
+   
  } 
 </script>
 </head>
@@ -93,18 +70,20 @@ function validate()
 		<h2>Welcome To Flight Booking</h2>
 	</center>
 	<ul>
-		<li><a href="home.jsp">Home</a></li>
+		<li><a href="index.jsp">Home</a></li>
 		<li><a href="Login.jsp">Login</a></li>
 		<li><a href="Register.jsp">Registration</a></li>
 		<li><a href="Flight1.jsp">All Flights</a></li>
 		<li><a href="Booking.jsp">Book Ticket</a></li>
 		<li><a href="check.jsp">check status</a></li>
 		<li><a href="Cancel.jsp">Cancel Flight</a></li>
+		                			<li><a href="Update.jsp">Reschedule Ticket</a></li>
+		
 	</ul>
 
 
 	<center>
-		<h2>Book Ticket</h2>
+		<h2>Cancel Ticket</h2>
 	</center>
 
 	<form name="form" action="CancelServlet" method="post"

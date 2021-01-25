@@ -59,13 +59,15 @@ li a:hover {
 	</center>
 
 	<ul>
-		<li><a href="home.jsp">Home</a></li>
+		<li><a href="index.jsp">Home</a></li>
 		<li><a href="Login.jsp">Login</a></li>
 		<li><a href="Register.jsp">Registration</a></li>
-		<li><a href="Flight1.jsp">All Flights</a></li>
+		<li><a href="Flight.jsp">Flights</a></li>
 		<li><a href="Booking.jsp">Book Ticket</a></li>
-		<li><a href="Check.jsp">check status</a></li>
+		<li><a href="Check.jsp">Check Status</a></li>
 		<li><a href="Cancel.jsp">cancel Ticket</a></li>
+		<li><a href="Update.jsp">Reschedule Ticket</a></li>
+		
 	</ul>
 
 

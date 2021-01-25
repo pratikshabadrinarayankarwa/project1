@@ -37,7 +37,7 @@ public class RegisterServlet extends HttpServlet {
          
          if(userRegistered.equals("SUCCESS"))  
          {
-            request.getRequestDispatcher("/Home.jsp").forward(request, response);
+            request.getRequestDispatcher("/Login.jsp").forward(request, response);
          }
          else  
          {

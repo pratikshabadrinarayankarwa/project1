@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<title>Payment</title>
 <style>
 .container {
 	width: 95%;
@@ -42,7 +42,7 @@
 <body>
 	<div class="container">
 		<div class="c1">
-			<img src="C:\Users\jagda\Desktop\MY Document\Atm1.jpg" width="100%"
+			<img src="C:\Users\PratikshaKarwa\Desktop\documents/ATM.jpeg" width="100%"
 				height="150px">
 		</div>
 		<div class="txt">Make A Payement</div>
@@ -64,12 +64,9 @@ alert("Payment successful!!");
 </script>
 					</center>
 					<br>
-					<button type="button" class="btn btn-warning">
-						<a href="Home.jsp">Back</a>
-					</button>
+				<a href="Register.jsp">
+					<input type="button" value="Back"></a>
 
-
-				</center>
 			</form>
 		</div>
 	</div>

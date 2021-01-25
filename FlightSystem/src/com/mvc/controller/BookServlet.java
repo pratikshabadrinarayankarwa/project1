@@ -36,7 +36,7 @@ public class BookServlet extends HttpServlet {
 			request.getRequestDispatcher("/Pay.jsp").forward(request, response);
 		} else {
 			request.setAttribute("errMessage", userBook);
-			request.getRequestDispatcher("/Book.jsp").forward(request, response);
+			request.getRequestDispatcher("/Booking.jsp").forward(request, response);
 		}
 
 	}

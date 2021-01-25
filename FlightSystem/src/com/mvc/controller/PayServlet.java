@@ -38,11 +38,11 @@ public class PayServlet extends HttpServlet {
 
 		if (userPay.equals("SUCCESS")) 
 		{
-			request.getRequestDispatcher("/Home.jsp").forward(request, response);
+			request.getRequestDispatcher("/Check.jsp").forward(request, response);
 		} 
 		else {
 			request.setAttribute("errMessage", userPay);
-			request.getRequestDispatcher("/Register.jsp").forward(request, response);
+			request.getRequestDispatcher("/Booking.jsp").forward(request, response);
 		}
 	}
 }

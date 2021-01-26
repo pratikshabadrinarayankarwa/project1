@@ -100,7 +100,7 @@ function validate()
 		<li><a href="Booking.jsp">Book Ticket</a></li>
 		<li><a href="Check.jsp">Check Status</a></li>
 		<li><a href="Cancel.jsp">Cancel Flight</a></li>
-		                			<li><a href="Update.jsp">Reschedule Ticket</a></li>
+		<li><a href="Update.jsp">Reschedule Ticket</a></li>
 		
 	</ul>
 
@@ -109,7 +109,7 @@ function validate()
 		<h2>Book Ticket</h2>
 	</center>
 
-	<form name="form" action="BookServlet" method="post"
+	<form name="form" action="BookingServlet" method="post"
 		onsubmit="return validate()">
 		<table align="center">
 

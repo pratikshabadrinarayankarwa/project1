@@ -1,14 +1,13 @@
 package com.mvc.bean;
-
 public class BookBean {
 
 	private String flightcode;
-	private String passengername;
-	private String source;
-	private String destination;
-	private String departure;
-	
-	public 	String getFlightcode() {
+    private String passengername;
+    private String source;
+    private String destination;
+    private String departuredate;
+   
+	public String getFlightcode() {
 		return flightcode;
 	}
 	public void setFlightcode(String flightcode) {
@@ -32,12 +31,13 @@ public class BookBean {
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
-	public String getDeparture() {
-		return departure;
+	public String getDeparturedate() {
+		return departuredate;
 	}
-	public void setDeparture(String departure) {
-		this.departure = departure;
+	public void setDeparturedate(String departuredate) {
+		this.departuredate = departuredate;
 	}
 	
-	
+    
 }
+ 

@@ -1,6 +1,5 @@
 package com.mvc.dao;
-
-
+ 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -22,10 +21,10 @@ public class RegisterDao {
              con = DBConnection.createConnection();
              String query = "insert into Registration(fullname,email,username,password) values (?,?,?,?)";
              preparedStatement = con.prepareStatement(query); 
-             preparedStatement.setString(1,fullname);
-             preparedStatement.setString(2,email);
-             preparedStatement.setString(3,username);
-             preparedStatement.setString(4,password);
+             preparedStatement.setString(1, fullname);
+             preparedStatement.setString(2, email);
+             preparedStatement.setString(3, username);
+             preparedStatement.setString(4, password);
              
              int i= preparedStatement.executeUpdate();
              
